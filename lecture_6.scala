@@ -85,7 +85,33 @@ val oneToFive: Range = 1 to 5
 // //////////////
 
 xs exists p
-  // true if there's an element x of xs
+  // true if there's an element x of xs for which p(x) holds
+
+xs forall p
+  // true if p(x) holds for all elements of xs
+
+xs zip ys
+  // like zip in Python, makes sequence of pairs
+
+xs.unzip
+  // splits a sequence of pairs into a pair of sequences
+
+xs.flatMap f
+  // applies collection-valued function f to all elements of xs and concatenates results
+
+xs.sum
+  // sum all elements of numeric collection
+
+xs.product
+  // product of all elements in numeric collection
+
+xs.max
+  // max of all elements in collection (an Ordering must exist)
+
+xs.min
+  // min of all elements in collection (an Ordering must exist)
+
+
 
 
 Left off at: 13:25 of 6.1 - Other Collections
